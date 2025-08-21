@@ -1,9 +1,6 @@
 import axios, { AxiosInstance } from "axios";
-import requestInterceptor from "./interceptors/requestInterceptor";
-import {
-  errorInterceptor,
-  responseInterceptor,
-} from "./interceptors/responseInterceptor";
+import requestInterceptor from "./interceptors/request";
+import { errorInterceptor, responseInterceptor } from "./interceptors/response";
 
 const http: AxiosInstance = axios.create({
   baseURL: process.env.NEXT_PUBLIC_API_URL,

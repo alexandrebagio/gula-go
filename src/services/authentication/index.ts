@@ -1,6 +1,6 @@
 import { create } from "zustand";
 import { createJSONStorage, persist } from "zustand/middleware";
-import http from "../http/httpService";
+import http from "../http";
 
 export interface LoginResponse {
   id: number;

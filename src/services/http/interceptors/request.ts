@@ -1,6 +1,6 @@
 import { InternalAxiosRequestConfig } from "axios";
 import { parse } from "cookie";
-import http from "../httpService";
+import http from "..";
 
 const requestInterceptor = async (config: InternalAxiosRequestConfig) => {
   if ((config.method as string).toLowerCase() !== "get") {
